@@ -18,7 +18,7 @@ function LeadForm() {
         </>
       ) : (
         <>
-          <h3>Schedule a Diagnostic</h3>
+          <h3>Schedule An Exploratory Call</h3>
           <label>
             Full name
             <input value={f.name} onChange={set('name')} placeholder="Your name" required />
@@ -41,7 +41,7 @@ function LeadForm() {
             </select>
           </label>
           <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-            Schedule Your Diagnostic →
+            Schedule Your Exploratory Call →
           </button>
           <small>We respond within one business day.</small>
         </>
@@ -55,7 +55,7 @@ export default function CTABlock() {
     <section className="sec cta-section" id="cta">
       <div className="cta-block">
         <div className="cta-copy">
-          <span className="eb" style={{ color: 'rgba(255,255,255,0.6)' }}>Schedule a Diagnostic</span>
+          <span className="eb" style={{ color: 'rgba(255,255,255,0.6)' }}>Schedule An Exploratory Call</span>
           <h2>
             Let&rsquo;s map your <em>next 12 months.</em>
           </h2>
@@ -65,7 +65,6 @@ export default function CTABlock() {
           </p>
           <div className="cta-contacts">
             <span className="btn btn-outline-light" style={{ cursor: 'default' }}>info@talentgen.com.ng</span>
-            <span className="btn btn-outline-light" style={{ cursor: 'default' }}>+234 903 204 5191</span>
           </div>
         </div>
         <LeadForm />

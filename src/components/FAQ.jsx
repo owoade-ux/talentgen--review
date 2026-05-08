@@ -30,11 +30,11 @@ export default function FAQ() {
   return (
     <section className="sec faq-section">
       <div className="faq-inner">
-        <div className="sec-head">
+        <div className="sec-head reveal">
           <span className="eb">FAQ</span>
           <h2>Questions founders <em>actually ask.</em></h2>
         </div>
-        <div className="faq">
+        <div className="faq reveal d1">
           {FAQS.map((f, i) => (
             <div
               key={f.q}

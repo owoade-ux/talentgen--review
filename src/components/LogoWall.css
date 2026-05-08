@@ -7,28 +7,34 @@
 .logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 32px;
   align-items: center;
-  padding: 24px 0;
+  padding: 28px 0;
   border-top: 1px solid var(--border-1);
   border-bottom: 1px solid var(--border-1);
 }
 
 .logos-label {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
-.lg {
-  padding: 12px 20px;
-  border: 1px solid var(--border-1);
-  border-radius: 9999px;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  color: var(--fg-2);
+.lg-img {
+  height: 36px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.55;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.lg-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
   .logo-wall-wrap { padding: 0 24px; }
+  .lg-img { height: 28px; }
+  .logos { gap: 20px; }
 }

@@ -4,7 +4,7 @@ const TRANSFORMATION = [
   {
     t: 'Strategy Planning',
     d: 'Translate boardroom ambition into a measurable roadmap your organisation can execute.',
-    items: ['Vision & OKR design', 'Growth roadmaps', 'Strategy execution planning'],
+    items: ['Vision & OKR design', 'Strategy execution planning'],
   },
   {
     t: 'Operating Model Design',
@@ -41,9 +41,9 @@ const PEOPLE = [
   },
 ];
 
-function ServiceCard({ s, featured }) {
+function ServiceCard({ s, featured, delay }) {
   return (
-    <article className={`svc-card${featured ? ' featured' : ''}`}>
+    <article className={`svc-card reveal d${delay}${featured ? ' featured' : ''}`}>
       <h3>{s.t}</h3>
       <p>{s.d}</p>
       <ul>
@@ -58,8 +58,7 @@ export default function Services() {
     <section className="sec services" id="services">
       <div className="services-inner">
 
-        {/* Service Line 1 */}
-        <div className="svc-line-head">
+        <div className="svc-line-head reveal">
           <span className="eb">Service Line 01</span>
           <h2 className="svc-line-title">Transformation</h2>
           <p className="svc-line-sub">
@@ -69,12 +68,11 @@ export default function Services() {
         </div>
         <div className="svc-grid">
           {TRANSFORMATION.map((s, i) => (
-            <ServiceCard key={s.t} s={s} featured={i === 0} />
+            <ServiceCard key={s.t} s={s} featured={i === 0} delay={i + 1} />
           ))}
         </div>
 
-        {/* Service Line 2 */}
-        <div className="svc-line-head" style={{ marginTop: 80 }}>
+        <div className="svc-line-head reveal" style={{ marginTop: 80 }}>
           <span className="eb">Service Line 02</span>
           <h2 className="svc-line-title">People &amp; Business Advisory</h2>
           <p className="svc-line-sub">
@@ -84,7 +82,7 @@ export default function Services() {
         </div>
         <div className="svc-grid four-col">
           {PEOPLE.map((s, i) => (
-            <ServiceCard key={s.t} s={s} featured={i === 0} />
+            <ServiceCard key={s.t} s={s} featured={i === 0} delay={(i % 4) + 1} />
           ))}
         </div>
 

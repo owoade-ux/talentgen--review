@@ -52,56 +52,43 @@ export default function AboutUs() {
       {/* Who We Are */}
       <div className="sec about-who">
         <div className="about-inner">
-          <div className="sec-head">
+          <div className="sec-head reveal">
             <span className="eb">About Us</span>
             <h2>Who We Are</h2>
           </div>
           <div className="about-grid">
-            <div className="about-portrait">
-              <img src={owoadePhoto} alt="Owoade Yussuff — Managing Partner, TalentGen" />
+            <div className="about-portrait reveal-left">
+              <img src={owoadePhoto} alt="" />
             </div>
-            <div className="about-body">
-              <p className="about-intro">
-                TalentGen is a Lagos-based strategic advisory firm serving startups
-                and mid-sized organisations across Africa and the Middle East. We
-                operate at the intersection of corporate strategy, operations, and
-                human capital — translating executive vision into operating models,
-                talent systems, and measurable commercial performance.
-              </p>
+            <div className="about-body reveal-right">
               <div className="about-advisor">
                 <div className="about-advisor-name">
-                  <span className="eb">Managing Partner</span>
+                  <span className="eb">Partner</span>
                   <h3>Owoade Yussuff</h3>
-                  <p className="about-advisor-title">Strategy &amp; Transformation Advisor</p>
                 </div>
                 <p>
-                  Owoade has a 14-year track record of partnering with CEOs and
-                  founders to turn strategic intent into operating reality. She has
-                  led transformations across Logistics, FMCG, Oil &amp; Gas, and
-                  Technology — bridging the gap between boardroom ambition and
-                  front-line execution.
+                  Owoade is a business transformation and HR advisory executive with
+                  14+ years of experience helping organisations build the structures,
+                  systems, and talent they need to grow.
                 </p>
-                <div className="about-stats">
-                  <div><span className="stat-n">14+</span><span className="stat-l">Years of experience</span></div>
-                  <div><span className="stat-n">90</span><span className="stat-l">FTEs placed</span></div>
-                  <div><span className="stat-n">4</span><span className="stat-l">Industry sectors</span></div>
-                </div>
-                <div className="about-prev">
-                  <span className="eb">Previous engagements</span>
-                  <div className="prev-list">
-                    {['Schlumberger', 'FrieslandCampina', 'Medlog', 'TSL Metroline'].map((c) => (
-                      <span key={c} className="prev-tag">{c}</span>
-                    ))}
-                  </div>
-                </div>
-                <div className="about-creds">
-                  <span className="eb">Credentials</span>
-                  <ul>
-                    <li>MSHRM — University of Wollongong</li>
-                    <li>Certified Scrum Product Owner (CSPO)</li>
-                    <li>Lagos-based · Pan-Africa &amp; Middle East reach</li>
-                  </ul>
-                </div>
+                <p>
+                  Her career spans strategy and transformation leadership at a leading
+                  technology-enabled logistics business, HR Business Partner and talent
+                  leadership roles at FrieslandCampina, and cross regional HR operations
+                  at Schlumberger, one of the world's largest energy services
+                  multinationals across Dubai and Kuala Lumpur. This combination of
+                  multinational discipline and African market experience gives her a
+                  practical, globally informed perspective on what it takes to build
+                  organisations that perform.
+                </p>
+                <p>
+                  She specialises in business partnering, change management, performance
+                  governance, organisational design, and talent strategy working with
+                  founders, executives, and leadership teams to turn strategic ambition
+                  into measurable execution. She holds a Master's degree in Human
+                  Resource Management from the University of Wollongong, Australia, and
+                  is a Certified Scrum Product Owner (CSPO®).
+                </p>
               </div>
             </div>
           </div>
@@ -111,11 +98,11 @@ export default function AboutUs() {
       {/* Vision & Values */}
       <div className="sec about-values">
         <div className="about-inner">
-          <div className="sec-head">
+          <div className="sec-head reveal">
             <span className="eb">Our Vision &amp; Values</span>
             <h2>What drives <em>everything we do.</em></h2>
           </div>
-          <div className="vision-block">
+          <div className="vision-block reveal d1">
             <span className="eb">Our Vision</span>
             <p className="vision-text">
               To be the most trusted strategic partner for African founders and
@@ -124,7 +111,7 @@ export default function AboutUs() {
           </div>
           <div className="values-grid">
             {VALUES.map((v, i) => (
-              <div key={i} className="value-card">
+              <div key={i} className={`value-card reveal d${i + 1}`}>
                 <span className="value-num">0{i + 1}</span>
                 <h4>{v.title}</h4>
                 <p>{v.desc}</p>
@@ -134,26 +121,6 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* Testimonials */}
-      <div className="sec about-testimonials">
-        <div className="about-inner">
-          <div className="sec-head">
-            <span className="eb">Client Testimonials</span>
-            <h2>What our clients <em>say.</em></h2>
-          </div>
-          <div className="testimonials-grid">
-            {TESTIMONIALS.map((t, i) => (
-              <div key={i} className="testimonial-card">
-                <p className="testimonial-quote">"{t.quote}"</p>
-                <div className="testimonial-attr">
-                  <span className="testimonial-name">{t.name}</span>
-                  <span className="testimonial-role">{t.role}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
 
       {/* Contact Us */}
       <div className="sec about-contact" id="contact">
@@ -183,7 +150,7 @@ export default function AboutUs() {
                 <div className="contact-option-icon">✆</div>
                 <div>
                   <span className="eb">Call us</span>
-                  <span className="contact-option-val">+234 — placeholder</span>
+                  <span className="contact-option-val">+2349032045191</span>
                 </div>
               </div>
               <div className="contact-option">
