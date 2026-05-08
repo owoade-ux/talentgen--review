@@ -4,11 +4,11 @@ import './FAQ.css';
 const FAQS = [
   {
     q: 'How long is a typical strategy engagement?',
-    a: 'Project-based diagnostics run 4–6 weeks. Full strategy design runs 8–12 weeks. Retainer engagements are open-ended and reviewed quarterly.',
+    a: 'Project-based diagnostics run 3–6 weeks. Full strategy design runs 4–8 weeks. Retainer engagements are open-ended and reviewed quarterly.',
   },
   {
     q: 'Do you work with founders pre-Series A?',
-    a: "Yes — strategy work is most valuable before scale forces tradeoffs. We've supported teams from seed through Series C.",
+    a: "Yes — strategy work is most valuable before scale forces tradeoffs.",
   },
   {
     q: 'Can you work remotely?',
@@ -19,8 +19,8 @@ const FAQS = [
     a: "Fees are based on scope, complexity, and timeline. Schedule a diagnostic and we'll send a tailored proposal within 48 hours.",
   },
   {
-    q: 'Who actually does the work?',
-    a: 'Owoade leads every engagement personally. For larger scopes we bring in vetted associates from the TalentGen network.',
+    q: 'How does your team work?',
+    a: 'Our managing partner leads every engagement personally. And we are proud to have vetted expert associates from the TalentGen network.',
   },
 ];
 
