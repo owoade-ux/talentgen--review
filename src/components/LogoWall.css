@@ -1,0 +1,34 @@
+.logo-wall-wrap {
+  padding: 0 64px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  padding: 24px 0;
+  border-top: 1px solid var(--border-1);
+  border-bottom: 1px solid var(--border-1);
+}
+
+.logos-label {
+  margin-right: 4px;
+}
+
+.lg {
+  padding: 12px 20px;
+  border: 1px solid var(--border-1);
+  border-radius: 9999px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--fg-2);
+}
+
+@media (max-width: 768px) {
+  .logo-wall-wrap { padding: 0 24px; }
+}
