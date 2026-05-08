@@ -25,8 +25,6 @@ export default function Hero() {
         <div className="hero-top">
           <span className="pill-strap">
             <span className="eb">Pan Nigeria</span>
-            <span className="pip" />
-            <span className="eb">Lagos</span>
           </span>
         </div>
         <div className="hero-bottom">
