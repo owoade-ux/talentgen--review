@@ -1,0 +1,25 @@
+.tg-footer {
+  background: var(--tg-black);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 32px 64px;
+}
+
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .tg-footer { padding: 24px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+}

@@ -1,0 +1,40 @@
+.logo-wall-wrap {
+  padding: 0 64px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  padding: 28px 0;
+  border-top: 1px solid var(--border-1);
+  border-bottom: 1px solid var(--border-1);
+}
+
+.logos-label {
+  margin-right: 8px;
+}
+
+.lg-img {
+  height: 36px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.55;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.lg-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .logo-wall-wrap { padding: 0 24px; }
+  .lg-img { height: 28px; }
+  .logos { gap: 20px; }
+}
