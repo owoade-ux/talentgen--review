@@ -64,7 +64,7 @@ export default function CTABlock() {
             questions, and tell you whether we&rsquo;re the right partner.
           </p>
           <div className="cta-contacts">
-            <span className="btn btn-outline-light" style={{ cursor: 'default' }}>info@talentgen.com.ng</span>
+            <span className="btn btn-outline-light" style={{ cursor: 'default' }}>info@talentgen.co</span>
           </div>
         </div>
         <LeadForm />

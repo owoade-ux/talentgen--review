@@ -139,11 +139,11 @@ export default function AboutUs() {
               <p className="contact-options-intro">
                 Prefer to reach us directly? Choose an option below.
               </p>
-              <a href="mailto:info@talentgen.com.ng" className="contact-option">
+              <a href="mailto:info@talentgen.co" className="contact-option">
                 <div className="contact-option-icon">✉</div>
                 <div>
                   <span className="eb">Send an email</span>
-                  <span className="contact-option-val">info@talentgen.com.ng</span>
+                  <span className="contact-option-val">info@talentgen.co</span>
                 </div>
               </a>
               <div className="contact-option">
