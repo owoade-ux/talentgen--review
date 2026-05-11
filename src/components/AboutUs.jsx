@@ -7,8 +7,18 @@ function ContactForm() {
   const [f, setF] = useState({ name: '', email: '', phone: '', message: '' });
   const set = (k) => (e) => setF({ ...f, [k]: e.target.value });
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await fetch('https://formspree.io/f/xrejrvoq', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({ name: f.name, email: f.email, phone: f.phone, message: f.message }),
+    });
+    setSubmitted(true);
+  };
+
   return (
-    <form className="contact-form" onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}>
+    <form className="contact-form" onSubmit={handleSubmit}>
       {submitted ? (
         <div className="contact-form-success">
           <span className="eb">Message received</span>
