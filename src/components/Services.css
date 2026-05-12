@@ -57,6 +57,18 @@
   box-shadow: var(--shadow-2);
 }
 
+.svc-card.featured {
+  background: var(--tg-blue);
+  color: #fff;
+  border: 0;
+}
+
+.svc-card.featured:hover {
+  box-shadow: var(--shadow-blue);
+}
+
+.svc-card.featured .eb { color: rgba(255, 255, 255, 0.7); }
+
 
 .svc-card h3 {
   margin: 6px 0;
@@ -72,6 +84,8 @@
   line-height: 1.55;
   color: var(--fg-2);
 }
+
+.svc-card.featured p { color: rgba(255, 255, 255, 0.85); }
 
 
 .svc-card ul {
@@ -100,6 +114,9 @@
   background: var(--tg-blue);
   flex-shrink: 0;
 }
+
+.svc-card.featured ul { border-color: rgba(255, 255, 255, 0.2); }
+.svc-card.featured li::before { background: #fff; }
 
 
 @media (max-width: 900px) {
