@@ -402,6 +402,23 @@ a.contact-option:hover {
   color: #fff;
 }
 
+.contact-social {
+  display: flex;
+  gap: 16px;
+  padding-top: 8px;
+}
+
+.contact-social a {
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.contact-social a:hover {
+  color: #fff;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; }
