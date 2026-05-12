@@ -33,13 +33,13 @@ export default function Hero() {
           </div>
           <div className="hero-side">
             <p>
-              Strategy advisory for founders, business owners and teams who already
-              have momentum and need the operating clarity to channel it. We diagnose,
-              design and stay until the plan is moving.
+              Strategy advisory for founders who already have momentum and need the
+              operating clarity to channel it. We diagnose, design, and stay until
+              the plan is moving.
             </p>
             <div className="hero-actions">
-              <a href="#cta" className="btn btn-primary">Schedule a Diagnostic →</a>
-              <a href="#approach" className="btn btn-ghost-light">See how we work</a>
+              <a href="/" onClick={(e) => { e.preventDefault(); document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' }); }} className="btn btn-primary">Schedule a Diagnostic →</a>
+              <a href="/" onClick={(e) => { e.preventDefault(); document.getElementById('approach')?.scrollIntoView({ behavior: 'smooth' }); }} className="btn btn-ghost-light">See how we work</a>
             </div>
           </div>
         </div>

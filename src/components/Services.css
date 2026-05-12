@@ -69,6 +69,7 @@
 
 .svc-card.featured .eb { color: rgba(255, 255, 255, 0.7); }
 
+
 .svc-card h3 {
   margin: 6px 0;
   font-family: var(--font-display);
@@ -81,10 +82,11 @@
   margin: 0;
   font-size: 14px;
   line-height: 1.55;
-  color: var(--fg-2);
+  color: var(--tg-ink);
 }
 
 .svc-card.featured p { color: rgba(255, 255, 255, 0.85); }
+
 
 .svc-card ul {
   list-style: none;
@@ -96,7 +98,6 @@
   gap: 8px;
 }
 
-.svc-card.featured ul { border-color: rgba(255, 255, 255, 0.2); }
 
 .svc-card li {
   font-size: 13px;
@@ -114,7 +115,9 @@
   flex-shrink: 0;
 }
 
+.svc-card.featured ul { border-color: rgba(255, 255, 255, 0.2); }
 .svc-card.featured li::before { background: #fff; }
+
 
 @media (max-width: 900px) {
   .svc-grid { grid-template-columns: 1fr; }

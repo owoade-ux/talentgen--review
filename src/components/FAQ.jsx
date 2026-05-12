@@ -4,11 +4,11 @@ import './FAQ.css';
 const FAQS = [
   {
     q: 'How long is a typical strategy engagement?',
-    a: 'Project-based diagnostics run 3–6 weeks. Full strategy design runs 4–8 weeks. Retainer engagements are open-ended and reviewed quarterly.',
+    a: 'Project-based diagnostics run 3-6 weeks. Full strategy design runs 4-8 weeks. Retainer engagements are open-ended and reviewed quarterly.',
   },
   {
     q: 'Do you work with founders pre-Series A?',
-    a: "Yes — strategy work is most valuable before scale forces tradeoffs.",
+    a: "Yes, strategy work is most valuable before scale forces tradeoffs.",
   },
   {
     q: 'Can you work remotely?',
@@ -43,7 +43,7 @@ export default function FAQ() {
             >
               <div className="faq-q">
                 <span>{f.q}</span>
-                <span className="faq-toggle">{open === i ? '–' : '+'}</span>
+                <span className="faq-toggle">{open === i ? '-' : '+'}</span>
               </div>
               <p className="faq-a">{f.a}</p>
             </div>

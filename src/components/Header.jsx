@@ -2,6 +2,13 @@ import { useState, useEffect } from 'react';
 import yMark from '../assets/y-mark.svg';
 import './Header.css';
 
+function scrollTo(id) {
+  return (e) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+}
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -13,16 +20,16 @@ export default function Header() {
 
   return (
     <header className={`tg-header${scrolled ? ' scrolled' : ''}`}>
-      <a className="tg-brand" href="#top">
+      <a className="tg-brand" href="/" onClick={scrollTo('top')}>
         <img src={yMark} alt="" width={22} height={26} />
         <span>TalentGen</span>
       </a>
       <nav className="tg-nav">
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#approach">Approach</a>
+        <a href="/" onClick={scrollTo('about')}>About Us</a>
+        <a href="/" onClick={scrollTo('services')}>Services</a>
+        <a href="/" onClick={scrollTo('approach')}>Approach</a>
       </nav>
-      <a href="#cta" className="btn btn-primary" style={{ padding: '10px 20px', fontSize: 13 }}>
+      <a href="/" onClick={scrollTo('cta')} className="btn btn-primary" style={{ padding: '10px 20px', fontSize: 13 }}>
         Contact Us →
       </a>
     </header>
