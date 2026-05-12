@@ -41,9 +41,9 @@ const PEOPLE = [
   },
 ];
 
-function ServiceCard({ s, featured, delay }) {
+function ServiceCard({ s, delay }) {
   return (
-    <article className={`svc-card reveal d${delay}${featured ? ' featured' : ''}`}>
+    <article className={`svc-card reveal d${delay}`}>
       <h3>{s.t}</h3>
       <p>{s.d}</p>
       <ul>
@@ -68,7 +68,7 @@ export default function Services() {
         </div>
         <div className="svc-grid">
           {TRANSFORMATION.map((s, i) => (
-            <ServiceCard key={s.t} s={s} featured={i === 0} delay={i + 1} />
+            <ServiceCard key={s.t} s={s} delay={i + 1} />
           ))}
         </div>
 
@@ -82,7 +82,7 @@ export default function Services() {
         </div>
         <div className="svc-grid four-col">
           {PEOPLE.map((s, i) => (
-            <ServiceCard key={s.t} s={s} featured={i === 0} delay={(i % 4) + 1} />
+            <ServiceCard key={s.t} s={s} delay={(i % 4) + 1} />
           ))}
         </div>
 
