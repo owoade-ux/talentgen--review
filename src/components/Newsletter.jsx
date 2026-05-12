@@ -9,7 +9,7 @@ export default function Newsletter() {
       <div className="newsletter">
         <h4>Quarterly notes from the engagement floor.</h4>
         {done ? (
-          <p className="newsletter-done">Subscribed — see you next quarter.</p>
+          <p className="newsletter-done">Subscribed. See you next quarter.</p>
         ) : (
           <form
             className="newsletter-form"

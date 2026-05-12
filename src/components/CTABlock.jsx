@@ -3,7 +3,7 @@ import './CTABlock.css';
 
 function LeadForm() {
   const [submitted, setSubmitted] = useState(false);
-  const [f, setF] = useState({ name: '', company: '', email: '', stage: 'Pre-launch / 0–10 people', note: '' });
+  const [f, setF] = useState({ name: '', company: '', email: '', stage: 'Pre-launch / 0-10 people', note: '' });
   const set = (k) => (e) => setF({ ...f, [k]: e.target.value });
 
   return (
@@ -34,9 +34,9 @@ function LeadForm() {
           <label>
             Team stage
             <select value={f.stage} onChange={set('stage')}>
-              <option>Pre-launch / 0–10 people</option>
-              <option>Scaling / 10–50 people</option>
-              <option>Mature / 50–250 people</option>
+              <option>Pre-launch / 0-10 people</option>
+              <option>Scaling / 10-50 people</option>
+              <option>Mature / 50-250 people</option>
               <option>250+</option>
             </select>
           </label>
@@ -60,7 +60,7 @@ export default function CTABlock() {
             Let&rsquo;s map your <em>next 12 months.</em>
           </h2>
           <p>
-            A 30-minute diagnostic — no slides, no pitch. We listen, ask sharp
+            A 30-minute diagnostic, no slides, no pitch. We listen, ask sharp
             questions, and tell you whether we&rsquo;re the right partner.
           </p>
           <div className="cta-contacts">

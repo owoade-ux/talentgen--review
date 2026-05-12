@@ -42,10 +42,10 @@ function ContactForm() {
 }
 
 const VALUES = [
-  { title: 'Integrity', desc: 'We do what we say and say what we mean. Our clients trust us with their most sensitive business challenges — we honour that trust in every interaction.' },
-  { title: 'Excellence', desc: 'We hold ourselves to the highest standard in everything we deliver — from the first diagnostic conversation to the final handover.' },
+  { title: 'Integrity', desc: 'We do what we say and say what we mean. Our clients trust us with their most sensitive business challenges and we honour that trust in every interaction.' },
+  { title: 'Excellence', desc: 'We hold ourselves to the highest standard in everything we deliver, from the first diagnostic conversation to the final handover.' },
   { title: 'Quality', desc: 'Our work is thorough, precise, and built to last. We don\'t cut corners, and we don\'t deliver work we wouldn\'t stake our reputation on.' },
-  { title: 'Respect', desc: 'We treat every client, partner, and colleague with dignity. Diverse perspectives make our work stronger — we listen before we lead.' },
+  { title: 'Respect', desc: 'We treat every client, partner, and colleague with dignity. Diverse perspectives make our work stronger and we listen before we lead.' },
   { title: 'Customer Focus', desc: 'Our clients\' success is our success. Every recommendation we make is shaped by a genuine understanding of their goals, constraints, and context.' },
 ];
 

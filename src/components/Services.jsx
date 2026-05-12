@@ -21,7 +21,7 @@ const TRANSFORMATION = [
 const PEOPLE = [
   {
     t: 'Workforce Planning',
-    d: 'Align your people capacity with your business strategy — now and for the future.',
+    d: 'Align your people capacity with your business strategy, now and for the future.',
     items: ['Headcount planning', 'Skills gap analysis', 'Succession planning'],
   },
   {
@@ -31,7 +31,7 @@ const PEOPLE = [
   },
   {
     t: 'Specialised Recruitment',
-    d: 'The right people in the right roles — recruited with precision and placed with purpose.',
+    d: 'The right people in the right roles, recruited with precision and placed with purpose.',
     items: ['Executive search', 'Role profiling', 'Onboarding design'],
   },
   {
