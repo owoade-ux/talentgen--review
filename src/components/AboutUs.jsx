@@ -83,21 +83,19 @@ export default function AboutUs() {
                 </p>
                 <p>
                   Her career spans strategy and transformation leadership at a leading
-                  technology-enabled logistics business, HR Business Partner and talent
-                  leadership roles at FrieslandCampina, and cross regional HR operations
-                  at Schlumberger, one of the world's largest energy services
-                  multinationals across Dubai and Kuala Lumpur. This combination of
-                  multinational discipline and African market experience gives her a
-                  practical, globally informed perspective on what it takes to build
-                  organisations that perform.
+                  technology-enabled logistics startup; executive and talent leadership
+                  roles at TSL and FrieslandCampina; and cross regional HR operations at
+                  Schlumberger, one of the world's largest energy services multinationals,
+                  across Dubai and Kuala Lumpur. This combination of multinational
+                  discipline and African market experience gives her a practical, globally
+                  informed perspective on what it takes to build high performing
+                  organisations.
                 </p>
                 <p>
-                  She specialises in business partnering, change management, performance
-                  governance, organisational design, and talent strategy working with
-                  founders, executives, and leadership teams to turn strategic ambition
-                  into measurable execution. She holds a Master's degree in Human
-                  Resource Management from the University of Wollongong, Australia, and
-                  is a Certified Scrum Product Owner (CSPO®).
+                  She holds a Master's degree in Human Resource Management from University
+                  of Wollongong and has specialized training in Lean Six Sigma, Prosci
+                  methodologies, and business management. She is also a Certified Scrum
+                  Product Owner (CSPO®).
                 </p>
               </div>
             </div>

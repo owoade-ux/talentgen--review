@@ -19,7 +19,7 @@ export default function LogoWall() {
       <div className="logos">
         <span className="eb logos-label">Trusted across</span>
         {LOGOS.map((l) => (
-          <img key={l.alt} src={l.src} alt={l.alt} className="lg-img" />
+          <img key={l.alt} src={l.src} alt={l.alt} className={`lg-img${l.alt === 'FrieslandCampina' ? ' lg-img-lg' : ''}`} />
         ))}
       </div>
     </div>

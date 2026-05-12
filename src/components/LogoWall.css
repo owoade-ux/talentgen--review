@@ -33,6 +33,11 @@
   opacity: 1;
 }
 
+.lg-img-lg {
+  height: 56px;
+  max-width: 180px;
+}
+
 @media (max-width: 768px) {
   .logo-wall-wrap { padding: 0 24px; }
   .lg-img { height: 28px; }
