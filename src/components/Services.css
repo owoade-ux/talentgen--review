@@ -82,7 +82,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 1.55;
-  color: var(--fg-2);
+  color: var(--tg-ink);
 }
 
 .svc-card.featured p { color: rgba(255, 255, 255, 0.85); }
