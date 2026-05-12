@@ -121,4 +121,7 @@
 
 @media (max-width: 900px) {
   .svc-grid { grid-template-columns: 1fr; }
+  .svc-card h3 { font-size: 20px; }
+  .svc-line-title { font-size: 32px; }
+  .svc-card { min-height: unset; }
 }
